@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NTF Preview Card</title>
+  <style>
+    body {
+      background-color: #0e2431;
+      margin: -30px 0 0 0; 
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      width: 300px; 
+      border: 1px solid #1f2a30;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      background-color: #142430;
+    }
+
+    .card img {
+      width: 220px;
+      height: auto;
+      margin-bottom: 20px;
+      transition: filter 0.3s ease-in-out; /* Added transition property */
+    }
+
+    /* Added hover effect */
+    .card img:hover {
+      filter: brightness(250%);
+    }
+
+    .card h2 {
+      margin: 0;
+      font-size: 24px; 
+      color: #fff;
+    }
+    
+    .card p {
+    color: #c0c0c0; /* Grey color */
+    }
+
+    .collection-description {
+    color: #c0c0c0; /* Grey color */
+    }
+
+    .equilibrium {
+      font-weight: bold;
+      color: #c0c0c0;
+      margin-top: -5px;
+    }
+
+    .equilibrium:hover {
+      color: #87CEEB; /* Sky blue color */
+    }
+
+    .info-container {
+      display: inline-block;
+      margin-top: 10px; 
+      margin-left: 28.1px; 
+      margin-right: 28px; 
+      white-space: nowrap; 
+      color: #fff; 
+    }
+
+    .info-container svg {
+      margin-right: 5px; 
+      vertical-align: middle; 
+    }
+
+    .line {
+      width: calc(100% - 60px); 
+      height: 1px; 
+      background-color: #fff;
+      margin-top: 25px;
+      margin-left: 30px; 
+    }
+
+    
+    .profile-picture img {
+      display: inline;
+      width: 40px; 
+      height: auto; 
+      margin-top: 10px;
+      margin-right: 250px;
+    }
+
+    .creation {
+      font-weight: bold;
+      color: #c0c0c0;
+      margin-left: px;
+      margin-top: -60px;
+    }
+
+    .creation:hover {
+      color: #87CEEB; /* Sky blue color */
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <img src="/home/norbudendup/Desktop/FrontEndmenotrchallange/ntf-preview/images/image-equilibrium.jpg"
+      alt="image-avatar">
+    <p class="equilibrium">Equilibrium #3429</p>
+    <p class="collection-description">Our Equilibrium collection promotes balance<br> and calm.</p>
+
+
+     <!-- Info container for "3 days left" -->
+     <div class="info-container">
+      <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/>
+      </svg>
+      <span>0.041ETH</span>
+    </div>
+
+    <!-- Info container for "0.041 ETH" -->
+    <div class="info-container">
+      <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2.667h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/>
+      </svg>
+      <span>3 days left</span>
+    </div>
+    
+   
+    <!-- White line -->
+    <div class="line"></div>
+
+    <!-- Profile picture -->
+    <div class="profile-picture">
+      <img src="/home/norbudendup/Desktop/FrontEndmenotrchallange/ntf-preview/images/image-avatar.png"
+      alt="profile picture">
+    
+    <div class="creation">
+      <p>Creation of Julies Wyvern</p>
+
+    </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
+
+
